@@ -173,11 +173,32 @@ h3 {
 }
 
 .continue-button {
+  display: block;
+  text-decoration: none;
   background-color: hsl(224, 30%, 27%);
   border-radius: 30px;
   height: 60px;
   line-height: 60px;
   vertical-align: middle;
+}
+.continue-button:hover{
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.reaction:hover {
+  background-color: hsl(0, 100%, 67%, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+.memory:hover {
+  background-color: hsl(39, 100%, 56%, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+.verbal:hover {
+  background-color: hsl(166, 100%, 37%, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+.visual:hover {
+  background-color: hsl(234, 85%, 45%, 0.2);
+  transition: background-color 0.3s ease-in-out;
 }
 
     @media (min-width:768px) {
