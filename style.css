@@ -1,0 +1,210 @@
+* {
+  box-sizing: content-box;
+}
+
+h1,
+h2,
+h3,
+p,
+.overall-score-circle,
+.skill-box {
+  margin-bottom: 20px;
+}
+
+/* BASIC STYLES */
+body {
+  text-align: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.primary-text {
+  color: hsl(0, 0%, 100%)
+}
+
+.secondary-text {
+  color: hsl(224, 30%, 27%);
+}
+
+.light-text {
+  color: hsl(276, 0%, 64%);
+}
+
+    @media (min-width:768px) {
+      header {
+        border-radius: 30px;
+        min-width: 545px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 10px 10px 30px hsl(234, 85%, 45%,0.1); 
+      } 
+    }
+
+/* OVERALL SCORE SECTION STYLES */
+.overall {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 30px 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.overall-score-circle {
+  border-radius: 50%;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  height: 125px;
+  width: 125px;
+}
+
+.overall-score {
+  font-size: 3rem;
+  font-weight: 800;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overall-max-score {
+  font-size: 0.8rem;
+  font-weight: 800;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grade {
+  font-size: 1.375rem;
+  font-weight: 800;
+}
+
+.overall p {
+  text-align: center;
+  width: 70%;
+  max-width: 270px;
+  margin: 0 auto;
+
+}
+    @media (min-width:768px) {
+      .overall {
+        display: inline-block;
+        height: 320px;
+        width: 270px;
+        border-radius: 7%;
+      }
+    }
+/* SKILLS SECTION STYLES */
+.skills {
+  background-color: hsl(0, 0%, 100%);
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.skill-box {
+  border-radius: 10px;
+  position: relative;
+  height: 60px;
+}
+
+.skill-icon {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skill-text {
+  background-color: transparent;
+  font-weight: 800;
+  height: 30px;
+  line-height: 30px;
+  padding: 15px;
+  position: absolute;
+  left: 13%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.skill-score {
+  font-weight: 800;
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.continue-button {
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+    @media (min-width:768px) {
+      .skills {
+        display: inline-block;
+        height: 320px;
+        width: 230px;
+        border-radius: 7%;
+        padding: 20px;
+        vertical-align: top;
+      }
+      .skill-box {
+        height: 40px;
+        margin-bottom: 12px;
+      }
+
+      .continue-button {
+        border-radius: 20px;
+        height: 40px;
+        line-height: 40px;
+        margin-top:30px;
+        font-size: 0.8rem;
+      }
+
+      .skill-icon,
+      .skill-text,
+      .skill-score{
+        font-size: 0.8rem;
+      }
+    }
